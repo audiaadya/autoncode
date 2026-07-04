@@ -42,12 +42,12 @@ Chassis chassis(
    // Distance sensors mounted on a face of the robot
    mik::distance_reset({
        mik::distance(
-           PORT8,         // Distance sensor port
+           PORT13,         // Distance sensor port
            rear_sensor,   // "front_sensor", "rear_sensor", "left_sensor", "right_sensor"
            4,             // X offset from tracking center (in). Positive = right of center, negative = left.
            6              // Y offset from tracking center (in). Positive = in front of center, negative = behind.
        ),
-       mik::distance(PORT3, left_sensor, -6, 4),
+       mik::distance(PORT13, left_sensor, -6, 4),
    })
 );
 

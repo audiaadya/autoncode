@@ -34,7 +34,11 @@ std::string blue_left_winpoint(bool calibrate, auto_variation var, bool get_name
 
         return "";
     }    
-
+    /* depends and varies on the odom, should reset every 20 seconds, will figure this out later
+    chassis.reset_axis(front_sensor, left_wall, 5);
+    chassis.reset_axis(front_sensor, right_wall, 5);
+    */
+   
     // Place start of autonoumous here
     
     return "";

@@ -9,7 +9,7 @@ void odom_constants() {
     chassis.set_swing_constants(12, .4, .01, 2, 15, 0);
 
     // Each exit condition set is in the form of (settle_error, settle_time, timeout).
-    chassis.set_turn_exit_conditions(1, 200, 3000);
+    chassis.set_turn_exit_conditions(3, 100, 3000); // edited for faster auton speed but less precision
     chassis.set_drive_exit_conditions(2, 200, 5000);
     chassis.set_swing_exit_conditions(1, 200, 3000);
 

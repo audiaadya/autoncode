@@ -40,6 +40,7 @@ void user_control(void) {
             
             chassis.control(drive_mode::SPLIT_ARCADE);
             assembly.control();
+
         }
         task::sleep(5);
     }
@@ -50,6 +51,8 @@ int main() {
     Competition.drivercontrol(user_control);
 
     pre_auton();
+
+    
 
     while (true) {
         task::sleep(100);

@@ -1,4 +1,23 @@
 {
+    "configurations": [
+        {
+            "name": "MSVC",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/include/mikLib",
+                "${workspaceFolder}/vex"
+            ],
+            "defines": [],
+            "compilerPath": "cl.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}
+{
 	"env": {
 		"vex_compilerPath": "${config:vexrobotics.vexcode.Cpp.Toolchain.Path}/clang/bin/clang",
 		"vex_sdkPath": "${config:vexrobotics.vexcode.Cpp.Sdk.Home}/V5/V5_20240802_15_00_00/vexv5",
